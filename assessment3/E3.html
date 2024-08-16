@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assingment 3 - Haobin Kuang
+        </title>
+        <style>
+
+    /*Task 1: Use CSS to display the forllowing information */
+            .student{font-size: 40px;
+                     background-color: #e1e95210;
+                     padding: 10px;
+                     text-align: left;
+                     color:rgb(237, 9, 9)
+                    }
+            .subject{font-style: oblique;
+                     font-size: 30px;
+                     color:rgb(81, 14, 236);
+                     background-color: #5df17510;
+                    }
+            .assignment{font-size: 20px;
+                        border-style: double;
+                        border-color:rgb(29, 19, 225);
+                        border-width: 5px;;
+                        }
+    
+    /*Task 2: Use CSS to style table 1 */
+            .t1_header{background-color: rgb(1, 1, 58);
+                        font-size: large;
+                        font-style: initial;
+                        color:white;
+                        text-align: left;}
+            .tableContent1{background-color: aliceblue;
+                           text-align: left;
+                           font-style: normal;
+                           color: black;
+                           border-style: groove;
+                           font-size:small}
+            .tableContent2{background-color: rgb(243, 220, 247);
+                           text-align: left;
+                           font-style:unset;
+                           color:rgb(43, 35, 35);
+                           border-style:outset;
+                           font-size: small;}
+
+    /* Task 3: Use CSS to style table 2 */
+            .t2_header{background-color: rgb(3, 69, 6);
+                        font-size: 24px;
+                        font-style:unset;
+                        color:rgb(230, 241, 189);
+                        text-align:center;}
+            .t2_attack{background-color: rgb(243, 246, 226);
+                        text-align: left;
+                        color: rgb(236, 9, 9);
+                        font-size: 18px;
+                        font-style:italic;
+                        font-weight: bolder;}
+    
+    /* Task 4: Use CSS to style highlight Button */
+            .highlight {background-color: rgb(69, 10, 246); 
+                        color:white;}
+        </style>
+       
+    </head>
+    <body>
+        <h3>Task 1 </h3>
+        <h1 class="student"> 8931288 Haobin Kuang </h1>
+	    <h2 class="subject"> COMP804: Web Security </h2>
+        <h3 class="assignment"> Assignement 3, due at 11pm on Monday 19 Aug 2024 </h3>
+        <br><br><br>
+
+    <!--html code for task 2 - create a table  -->
+        <h3>Task 2 - Autumn session 2024</h3>
+        <table border="1">
+            <tr>
+                <th class="t1_header">Activity</th>
+                <th class="t1_header">Date</th>
+            </tr>
+            <tr>
+                <td class="tableContent1">First day to enrol for re-enrolling (continusing student)</td>
+                <td class="tableContent1">20 Nov 2023</td>
+            </tr>
+            <tr>
+                <td class="tableContent2">First day to enrol for re-enrolling (commencing student)</td>
+                <td class="tableContent2">04 Dec 2023</td>
+            </tr>
+            <tr>
+                <td class="tableContent1">Orientation</td>
+                <td class="tableContent1">19 Feb - 22 Feb 2024</td>
+            </tr>
+            <tr>
+                <td class="tableContent2">Lectures Commence (weeks1-7)</td>
+                <td class="tableContent2">26 Feb - 12 Apr 2024</td>
+            </tr>
+                <td class="tableContent1">Last day to enrol/add subjects</td>
+                <td class="tableContent1">08 Mar 2024</td>
+            <tr>
+                <td class="tableContent2">CENSUS DATE
+                    <ul>
+                        <li>Fees due</li>
+                        <li>Last day to withdraw from subject without paying for them</li>
+                        <li>HECS/FEE HELP debt reporting date</li>
+                        <li>Last day to change HECS/FEE HELP billing option</li>
+                    </ul>
+                <a href="https://uowedu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012659" target="_blank">Learn more about Census date ></a>
+                <br>
+                </td>
+                <td class="tableContent2">31 Mar 2024</td>
+            </tr>
+            <tr>
+                <td class="tableContent1">Student Services and Amenities Fees Due</td>
+                <td class="tableContent1">01 Apr 2024</td>
+            </tr>
+        </table>
+        <br><br><br>
+                
+        <!--html code for task 3 -->         
+    
+        <h3>Task 3 - 10 common web attacks</h3>
+        <table border="2">
+            <tr>
+                <th class="t2_header">Name</th>
+                <th class="t2_header">Web Attacks</th>
+            </tr>
+            <tr>
+                <td class="t2_attack">SQL injection (SQLI)
+                <br><br>
+                <img src="SQL injection pic.png" width="120px" alt="SQL injection attack" />
+                </td>
+                <td><b>Description of SQLI attack:</b><br>
+                    SQL injection occurs when attackers inject malicious SQL code into input fields, manipulating a web application’s database. This can lead to unauthorized access, data manipulation, or data exfiltration.
+                    <br><br>In addition to the Equifax breach, the 2011 Sony PlayStation Network hack was facilitated by SQL injection. Hackers exploited a vulnerability to access and steal user data, including personal information and credit card details.
+                <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2_attack">Cross-Site Scripting (XSS)
+                <br><br>
+                <img src="XSS.png" width="120px" alt="Cross-Site Scripting" />
+                </td>
+                <td><b>Description of XSS attack:</b><br>
+                    XSS involves injecting malicious scripts into web pages that are then executed by users’ browsers. This allows attackers to steal information and session tokens, or perform actions on behalf of users.
+                    <br><br>The MySpace worm in 2005 utilized XSS to spread rapidly. Users were unknowingly executing malicious scripts by simply viewing an infected user’s profile, leading to the compromise of thousands of accounts.
+                <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2_attack">Cross-Site Request Forgery (CSRF)
+                <br><br>
+                <img src="CSRF.png" width="120px" alt="Cross_Site Request Forgery" />
+                </td>
+                <td><b>Description of CSRF attack:</b><br>
+                    CSRF forces users to perform unwanted actions without their consent by tricking them into executing malicious requests, often initiated by a different website. This can result in unauthorized actions on the user’s behalf.
+                    <br><br>In 2008, a CSRF vulnerability in Gmail allowed attackers to change a user’s email settings without their knowledge. This highlighted the potential impact of CSRF on widely used services.
+                    <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2_attack">Security Misconfigurations
+                <br><br>
+                <img src="misconfiguration.png" width="120px" alt="Sec Misconfigurations" />
+                </td>
+                <td><b>Description of Security Misconfigurations:</b><br>
+                    Security misconfigurations occur when a web application is improperly set up, leaving vulnerabilities that attackers can exploit. This can include exposed sensitive files, default credentials, or unnecessary services.
+                    <br><br>In 2014, a security misconfiguration in a Verizon Communications server exposed the personal information of over 6 million customers, emphasizing the importance of thorough configuration reviews.
+                    <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2_attack">DDoS Attacks
+                <br><br>
+                <img src="DDOS.png" width="120px" alt="DDoS attack" />
+                </td>
+                <td><b>Description of DDoS attack:</b><br>
+                    Distributed Denial of Service (DDoS) attacks flood a website’s servers with an overwhelming amount of traffic, rendering the site inaccessible to legitimate users.
+                    <br><br>The 2018 GitHub DDoS attack set a record for the largest DDoS attack at the time, peaking at 1.3 terabits per second. This massive traffic overload temporarily disrupted GitHub’s services.
+                    <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2_attack">Brute Force Attacks
+                <br><br>
+                <img src="brute force.png" width="120px" alt="Brute Force attack" />
+                </td>
+                <td><b>Description of Brute Force attack:</b><br>
+                    Brute force web applications security attacks involve systematically attempting various username and password combinations until the correct one is found. This method exploits weak or easily guessable credentials.
+                    <br><br>In 2014, a brute force attack on eBay exposed the login credentials of millions of users, prompting the company to enforce stricter password policies.
+                    <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2_attack">Phishing
+                <br><br>
+                <img src="phishing.png" width="120px" alt="Phishing attack" />
+                </td>
+                <td><b>Description of Phishing attack:</b><br>
+                    Phishing uses deceptive emails, websites, or messages to trick individuals into revealing sensitive information such as usernames, passwords, or financial details.
+                    <br><br>The 2016 Gmail phishing attack, known as “Google Docs,” tricked users into clicking a seemingly innocent link that granted attackers access to their Gmail accounts. This sophisticated phishing campaign affected a large number of users.
+                    <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2_attack">Man-in-the-Middle (MitM) Attacks
+                <br><br>
+                <img src="MitM.png" width="120px" alt="MitM attack" />
+                </td>
+                <td><b>Description of MitM attack:</b><br>
+                    MitM web application security attacks involve intercepting and possibly altering communication between two parties without their knowledge. This can lead to the interception of sensitive data.
+                    <br><br>The 2014 Superfish incident involved the pre-installed Superfish adware on Lenovo laptops, which performed MitM attacks by intercepting and modifying web traffic to inject advertisements. This raised serious privacy concerns.
+                    <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2_attack">File Inclusion Vulnerabilities
+                <br><br>
+                <img src="file inclusion vul.png" width="120px" alt="File Inclusion Vul" />
+                </td>
+                <td><b>Description of File Inclusion Vulnerablilities:</b><br>
+                    File inclusion vulnerabilities allow attackers to include files on a server, potentially leading to the execution of malicious code. This can result in unauthorized access or data manipulation.
+                    <br><br>In 2012, a file inclusion vulnerability in LinkedIn’s mobile app allowed attackers to access and manipulate user data, emphasizing the importance of secure coding practices.
+                    <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2_attack">Zero-Day Exploits
+                <br><br>
+                <img src="zero day.png" width="120px" alt="Zero-Day attack" />
+                </td>
+                <td><b>Description of XSS attack:</b><br>
+                    Zero-day exploits target vulnerabilities unknown to the software vendor, giving attackers an edge until a patch is released. This can result in widespread and severe compromises.
+                    <br><br>The 2017 WannaCry ransomware attack exploited a zero-day vulnerability in Microsoft Windows, affecting organizations globally. The attack highlighted the rapid and widespread impact of exploiting unknown weaknesses.
+                    <br><a href="https://www.calibraint.com/blog/types-of-web-application-security-attacks" target="_blank">reference link></a><br>
+                </td>
+            </tr>
+        </table> 
+        <br><br><br>
+
+    <!--html code for task 4 -->         
+    
+        <h3>Task 4 - Javascript with button</h3>
+     	<button id="catButton" onClick="Cat()">Cat</button> 
+        <button id="dogButton" onClick="Dog()">Dog</button>
+		<button id="frogButton" onClick="Frog()">Frog</button>
+        <br><br>
+		<input id="display1">
+        <br><br>
+        <span id="display2"></span>
+        <br><br>
+        <img id="display3">
+       
+        <script>
+
+    /* Task 4: javascript code */
+
+        function highlightButton(buttonId) {
+            // Remove highlight from all buttons
+            document.getElementById("catButton").classList.remove("highlight");
+            document.getElementById("dogButton").classList.remove("highlight");
+            document.getElementById("frogButton").classList.remove("highlight");
+            // Add highlight to the clicked button
+            document.getElementById(buttonId).classList.add("highlight");
+            }
+    
+        function Cat(){
+            var displayField = document.getElementById("display1");
+            displayField.value = "User clicks Cat";
+            var displaySpan = document.getElementById("display2");   	
+            displaySpan.innerHTML = "Cat is clicked";
+			var image = document.getElementById("display3");
+            image.src = "cat.png";
+            highlightButton("catButton");
+            }
+        
+        function Dog(){
+            var displayField = document.getElementById("display1");
+            displayField.value = "User clicks Dog";
+            var displaySpan = document.getElementById("display2");   	
+            displaySpan.innerHTML = "Dog is clicked";
+            var image = document.getElementById("display3");
+            image.src = "dog.png";
+            highlightButton("dogButton");
+            }
+                
+        function Frog(){
+            var displayField = document.getElementById("display1");
+            displayField.value = "User clicks Frog";
+            var displaySpan = document.getElementById("display2");   	
+            displaySpan.innerHTML = "Frog is clicked";
+            var image = document.getElementById("display3");
+            image.src = "frog.png";
+            highlightButton("frogButton");
+            }
+
+        </script>
+                
+
+    </body>
+    <br><br><br>
+    
+</html>
